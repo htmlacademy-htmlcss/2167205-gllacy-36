@@ -5,8 +5,83 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-main-header">
+        <a href="#" class="header-logo">
+            <img>
+        </a>
+        <nav class="header-navigation">
+            <ul class="header-information-list">
+                <li class="header-information-item">
+                    <a href="#" class="header-information-link header-link-catalog">
+                        <span>Каталог</span>
+                    </a>
+                    <div class="catalog-popover">
+                        <p class="catalog-title">Новинки</p>
+                        <ul class="catalog-popover-list">
+                            <li class="catalog-popover-item">
+                                <a href="#" class="catalog-popover-link">Сливочное</a>
+                            </li>
+                            <li class="catalog-popover-item">
+                                <a href="#" class="catalog-popover-link">Щербеты</a>
+                            </li>
+                            <li class="catalog-popover-item">
+                                <a href="#" class="catalog-popover-link">Фруктовый лед</a>
+                            </li>
+                            <li class="catalog-popover-item">
+                                <a href="#" class="catalog-popover-link">Мелорин</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header-information-item">
+                    <a href="#" class="header-information-link header-link-delivery">
+                        <span>Доставка и оплата</span>
+                    </a>
+                </li>
+                <li class="header-information-item">
+                    <a href="#" class="header-information-link header-link-about">
+                        <span>О компании</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header-menu-list">
+                <li class="header-menu-item header-link-phone">
+                    <a href="tel:+78005558628 " class="header-menu-phone">+7 800 555-86-28</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link header-link-search">
+                        <span class="visually-hidden">Поиск</span>
+                    </a>
+                    <div class="header-search">
+                        <form class="header-search-form" action="#" method="get">
+                            <input type="text" name="text">
+                        </form>
+                    </div>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link header-link-login">
+                        <span>Вход</span>
+                    </a>
+                    <div class="header-login-popover">
+                        <p class="login-popover-title">Личный кабинет</p>
+                        <form class="login-form" action="#" metod="get">
+                            <input class="login-email" type="email" name="email" value="email@example.com">
+                            <input class="login-password" type="password" name="password">
+                            <input class="login-button" type="button" value="Войти">
+                            <div class="login-text">
+                                <a class="form-text" href="#">Забыли пароль ?</a>
+                                <a class="form-text" href="#">Регистрация</a>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="header-menu-item">
+                    <a href="#" class="header-menu-link header-link-cart">
+                        <span>2 товара</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
   </body>
 </html>
