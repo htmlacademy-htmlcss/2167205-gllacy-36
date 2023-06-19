@@ -70,7 +70,9 @@
             </a>
             <div class="header-search">
               <form class="header-search-form" action="#" method="get">
-                <input class="search-input" type="text" name="text" placeholder="Поиск по сайту">
+                <label class="visually-hidden" for="search"> Поиск по сайту
+                  <input class="search-input" type="text" name="text" id="search" placeholder="Поиск по сайту">
+                </label>
               </form>
             </div>
           </li>
@@ -85,9 +87,11 @@
             </a>
             <div class="header-login-popover">
               <p class="login-popover-title subsection-title">Личный кабинет</p>
-              <form class="login-form" action="#" metod="get">
-                <input class="login-email" type="email" name="email" placeholder="email@example.com">
-                <input class="login-password" type="password" name="password" placeholder="******">
+              <form class="login-form" action="#" method="get">
+                <label class="visually-hidden" for="e-mail">e-mail</label>
+                <input class="login-email" type="email" name="email" id="e-mail" placeholder="email@example.com">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input class="login-password" type="password" name="password" id="password" placeholder="******">
               </form>
               <div class="login-button-container">
                 <button class="login-button red-button" type="button">Войти</button>
@@ -144,12 +148,12 @@
                     </button>
                   </li>
                 </ul>
-                <footer class="cart-footer">
+                <div class="cart-footer">
                   <a href="#" class="cart-footer-button red-button">
                     <span>Оформить заказ</span>
                   </a>
                   <p class="cart-prise-result">Итого: 790 ₽</p>
-                </footer>
+                </div>
               </div>
             </div>
           </li>
@@ -409,7 +413,8 @@
               <label for="newslatter-email" class="visually-hidden">Email</label>
               <input class="newslatter-form-email" type="email" name="email" placeholder="email@example.com"
                 id="newslatter-email">
-              <input class="newslatter-form-button red-button" type="submit" value="Отправить">
+              <label class="visually-hidden" for="newslatter-button">Отправить</label>
+              <input class="newslatter-form-button red-button" type="submit" id="newslatter-button" value="Отправить">
             </form>
           </div>
         </div>
@@ -450,7 +455,8 @@
                 <input class="form-field delivery-address" type="text" id="form-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>
-              <input class="delivery-submit-button red-button" type="submit" value="Отправить">
+              <label class="visually-hidden" for="delivery-button">Отправить</label>
+              <input class="delivery-submit-button red-button" type="submit" id="delivery-button" value="Отправить">
             </form>
           </div>
         </div>
@@ -470,7 +476,7 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <div calss="social-list">
+        <div class="social-list">
           <ul class="footer-social social-list">
             <li class="footer-social-item social-item">
               <a href="https://t.me/htmlacademy" class="footer-social-link social-tg">
